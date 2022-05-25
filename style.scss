@@ -1,0 +1,53 @@
+@import "./node_modules/animate.css/animate.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+$font-family-sans-serif :'Lora', serif;
+$primary : hsl(12, 88%, 59%);
+$secondary :hsl(13, 100%, 96%);
+
+
+@import './node_modules/bootstrap/scss/bootstrap';
+
+body{
+    background-image: url(../vite-project/images/bg-simplify-section-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.site-navbar:hover .navbar-brand-img{
+  transform :rotate(360deg);
+  color: #00c6a9;
+}
+.site-navbar-onscroll{
+  background-color: rgba(255, 255, 255, 0.8);
+  /* box-shadow : box-shadow-sm; */
+  backdrop-filter : blur(5px) contrast(180%);
+  animation : fadeInDown 1s ease-in-out;
+
+}
+#nav{
+  backdrop-filter: blur(16px) saturate(166%);
+  -webkit-backdrop-filter: blur(16px) saturate(166%);
+  background-color: rgba(255, 255, 255, 0.45);
+  z-index: 1008;
+ 
+}
+.line{
+    line-height: 40px;
+}
+.footer-two{
+    background-color: hsl(233, 12%, 13%)
+}
+.img-one{
+    margin: -40px;
+}
+.bg-one{
+    background-color: hsl(13, 100%, 96%);
+}
+
+@media screen and (max-width: 992px) {
+    .img-none{
+        display: none;
+    }
+
+    
+    
+}
